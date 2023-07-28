@@ -1,4 +1,4 @@
-# ELECTIONS
+# Elections
 
 This program is a demonstration of how I can manage a project.
 
@@ -7,7 +7,7 @@ The purpose is to compare Spain's 2023 local election results with
 some fake results (if any).
 
 
-# PROGRAM FLOW
+# Program flow
 
 The program is planned to make a scraping of the local 2023-2019 election
 results and store itr on a database from https://resultados.locales2023.es/
@@ -19,7 +19,7 @@ SQLAlchemy.
 The database comes empty and only with the schema for MySQL/MariaDB.
 
 
-# FUTURE PROGRAM ADDINGS
+# Future program addings
 
 The plan is to add another scraper for 2023 parlamentary elections and
 2019 too if available.
@@ -33,7 +33,7 @@ by town because in Spain there is not an API point with elections results
 (terrific but true).
 
 
-# INSTALLATION
+# Installation
 
 1.- You must add the python libraries for the program with:
 
@@ -53,7 +53,7 @@ Then add the dump to create the database schema with tables and indexes:
 mysql elections < elections-schema.sql
 
 
-# EXECUTION
+# Execution
 
 Once the libraries are installed you only need to execute the program:
 
