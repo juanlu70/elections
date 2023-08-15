@@ -1,13 +1,15 @@
-import pytest
-import scrapper
+import scraper_locals
+
+from sqlalchemy import create_engine
+from sqlalchemy import text
 
 
-scrap = scrapper.Scraper()
+scrap = scrapper.ManageScraper()
 
 
 def test_open_towns_file():
     scrap.open_towns_file()
-    assert len(scrap.list) == 6
+    assert len(scrap.tlist) == 6
 
 
 def test_fill_regions():
@@ -31,5 +33,5 @@ def test_get_province():
 
 
 def test_towns():
-    result = scrap.get_towns()
+    scrap.get_towns()
     assert scrap.towns_urls[279]['url'] == "https://resultados.locales2023.es/resultados/0/362/90"
