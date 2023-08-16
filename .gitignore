@@ -110,3 +110,7 @@ env*
 
 # Original Source (Dev)
 ta/_wrapper.py
+
+# Don't include data files directory
+data/*
+
